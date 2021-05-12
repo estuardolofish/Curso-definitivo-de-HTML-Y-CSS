@@ -1,9 +1,28 @@
+
+
+
+/* en este caso el ancho del main ocupara el 100% segun el tamño de la pantalla */
+/* por lo tanto es una medida relativa y aqui se puede observar la medida relativa del ancho y 
+la medida absoluta del alto */
 main
 {
     background-color: red;
-    width: 600px;
+    width: 100%;
     height: 500px;
 }
+
+
+/* 
+Aqui esta heredando de la fuente predeterminada que son los 16 pixeles, entonces dara como resultado 
+el tamaño de fuente de 8px */
+/* p
+{
+    font-size: 50%;
+} */
+
+/* 
+Esta es una medida absoluta ya que se le esta asignando el tamaño de fuente
+de 16 pixeles al texto */
 p
 {
     font-size: 16px;
