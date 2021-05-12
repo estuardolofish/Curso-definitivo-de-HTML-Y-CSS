@@ -1,0 +1,132 @@
+<!-- DOCTYPE html -> La linea que le dice al navegador que el codigo que esta leyendo es HTML5 -->
+<!DOCTYPE html>
+<!-- html -> Contenedor principal que se le conoce como contenedor padre  -->
+<!-- lang -> es el que le dice al navegador que lenguaje tiene ese proyecto -->
+<html lang="es">
+    <!-- head y body son contenedores hermanos -->
+    <!-- 
+        head -> va todo lo que es importante y que necesita el navegador para poder cargar el proyecto
+        -dependencias
+        -librerias
+        -css
+     -->
+    <head>
+        <!-- 
+            meta -> Le dan informacion al navegador
+                charset -> Atributo para que el navegador pueda entender caracteres especiales(UTF-8)
+                UTF-16 -> para otros caracteres especiales
+
+                name description -> nos ayuda para que cuando la gente busque cierta informacion en internet, en la descripcion que tengamos en la pagina pueda salir esa informacion  
+                content -> cuando buscamos es la descripcion que sale en la busqueda
+
+                name robots -> le decimos a los robots de buscadores que le autorizamos que pueda ayudar a colocar nuestra pagina segun la busqueda
+                content index,follow -> le decimos que si le autorizamos para que nos ayude a colocar la pagina que tenga que ver con neustro contenido
+
+            -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Esta página te mostrará gotos de gatos">
+        <meta name="robots" content="index,follow">
+        <!-- Tiutlo que aparece en la pestaña -->
+        <title>Es mi página</title>
+        <!-- meta importante para los proyectos responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Etiqueta para agregar el css -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <!-- 
+        body -> Es lo que va a ver el usuario
+        -texto
+        -imagenes
+        -videos
+     -->
+    <body>
+        <!-- Etiquetas de contenido y Etiquetas contenedoras  -->
+
+        <!-- Etiquetas contenedoras -->
+        <!-- Si queremos trabajar un header  -->
+        <header>
+            <!-- Para una barra de navegacion va dentro del header -->
+            <nav></nav>
+        </header>
+        <!-- Etiqueta principal, Si queremos trabajar una parte principal vamos a usar la etiqueta main, va a ir abajo y fuera del header -->
+        <main>
+            <section>
+                <!-- La etiqueta figure sirve para generar un contenedor para una o varias imagenes -->
+                <figure>
+                <!-- 
+                    Etiqueta img para renderisar imagenes
+                        -src lugar de donde llamamos la imagen, puede ser una url
+                        -alt :
+                            1-descripcion para cuando no se muestre
+                            2-nos ayuda para temas de accesibilidad
+                -->
+                <img src="" alt="">
+                
+                <!-- se pone una descripcion similar al alt pero visualmente ayudara a dar una explicacion de la imagen -->
+                <figcaption></figcaption>
+
+                </figure>
+
+
+                <article>
+
+                </article>
+            </section>
+            <!-- 
+                Etiqueta para agregar listas
+                -ul para agregar listas desordenadas
+                -ol para agregar listas enumeradas
+                -li dentro del ul para agregar el elemento de esa lista
+             -->
+             <ul>
+                 <li>Soy una manzana</li>
+             </ul>
+             <ol>
+                 <li>Soy una manzana</li>
+             </ol>
+
+            <!-- 
+                Etiqueta para agregar un video
+                    Atributos
+                    1- controls : sirve para habilitar los controles del reproductor
+                    2- preload : nso ayuda para que el video se renderise cuando la pagina se carga en el navegador
+                                 para que no existe mucho tiempo de espera
+                        auto
+                        metadata
+                        none
+                    en src se puede colocar de que segundo a que segundo quiere que se vea.
+                        src="ruta#t=10,60" donde el primer segundo es inicio y el segundo tiempo es el final
+
+            -->
+            <video controls preload="auto">
+                <!-- aqui se colocan todos los source con diferentes formatos de video para que el navegador decida cual renderizar si renderiza todos
+                     queda a decicion del navegador
+                -->
+                <source  src="">
+            </video>
+
+            <!-- La etiqueta de form nos ayuda a generar formularios, es la forma correcta de crearlos. -->
+            <form action=""></form>
+
+        </main>
+        <!-- Para agregar el pie de la pagina -->
+        <footer>
+
+        </footer>
+        <!-- Etiqueta contenedora que se usa como comoding -->
+        <div></div>
+
+        <!-- Etiqueta para generar un texto -->
+        <p>Soy un texto</p>
+        
+        <!-- Etiqueta para encabezados -->
+        <h1>Soy un Tiutlo</h1>
+        <h2>Soy otro titulo</h2>
+        <h3>Soy otro titulo más</h3>
+
+        <!-- Etiqueta de texto o para generar hipervinculos -->
+        <a href="#">Soy un Link</a>
+        
+    </body>
+</html>
+<!--  -->

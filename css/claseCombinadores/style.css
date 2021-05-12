@@ -1,0 +1,34 @@
+/* Que una etiqueta parrafo sea hija directa de una etiqueta div */
+/* agruegale estos estilos */
+/* div > p 
+{
+    color: red;
+
+} */
+
+/* Que todas las etiquetas p que esten dentro de un contenedor div  */
+/* agregarles estos estilos */
+/* div p
+{
+    color: red;
+} */
+
+
+/* Ejemplo de combinadores hermano general  */
+/* h2 ~ p
+{
+    color: red;
+} */
+
+
+/* Ejmplo para el hermano general y cercano
+Quiero que me coloque de color rojo todo h2 que este cercano a un p */
+/* h2 + p
+{
+    color: red;
+} */
+
+/* p.small
+{
+    color: red;
+} */

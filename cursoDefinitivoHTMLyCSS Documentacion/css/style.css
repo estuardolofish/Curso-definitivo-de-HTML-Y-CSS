@@ -1,0 +1,46 @@
+/* 
+Selector universal para resetear los estilos que traen por defecto el navegador 
+Se recomiendo siempre ponerlo al inicion de cada proyecto
+*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Para utilizar medidas rem */
+html
+{
+    font-size: 62.5%;
+}
+
+/* el punto y nombre de la clase segun la etiqueta y el bloque */
+.main-nav
+{
+    /* margen desde arriba */
+    margin-top: 10px;
+    /* para desaparecer el punto de la lista o biñeta */
+    list-style: none;
+    /* un espacio interno para la etiqueta o el bloque */
+    padding-left: 0px;
+    /* color de fondo */
+    background-color: #13a4a4;
+}
+
+.main-nav__item
+{
+    /* para poner horizontalmente la lista que estaba vertical */
+    display: inline-block;
+}
+
+/* especificamente a los componenes de ancla o "a" que estan dentro de los items en este caso la clase */
+.main-nav__item a
+{
+    /* poner color de letra */
+    color: white;
+    padding: 5px;
+    /* darle radio al borde del elemento */
+    border-radius: 2px;
+    /* quitar el subrayado de los items */
+    text-decoration: none;
+}
