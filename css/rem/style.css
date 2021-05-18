@@ -1,3 +1,7 @@
+/* 
+Estas dos primeras instrucciones del * y el html es para reiniciar el margin y padding para 
+que el proyecto inicie sin nada y asi poder usar el rem = 10px
+*/
 *
 {
     box-sizing: border-box;
