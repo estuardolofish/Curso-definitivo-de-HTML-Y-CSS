@@ -1,12 +1,22 @@
+/* 
+    selector universal
+*/
 *
 {
+    /*  */
     box-sizing: border-box;
+    /* reseteamos el margin en 0 */
     margin: 0;
+    /* reseteamos el padding en 0 */
     padding: 0;
 }
 
 main
 {
+    /* 
+        lo que estamos haciendo aqui es decirle que el <main></main> estara ocupando el 
+        100% de la pantalla
+    */
     width: 100vw;
     height: 100vh;
     background-color: purple;
@@ -14,10 +24,49 @@ main
 
 section
 {
+    /* 
+        este width va a ser para tenerlo de base y regularmente es en porcentaje
+        siempre va a ocupar el 80% del espacio que tanga disponible
+    */
+    width: 80%;
+
+
+    /* 
+        va a utilizar el 80% del espacio disponible hasta que llegue a 320px
+        lo mas pequeño que puede ser
+    */
+    min-width: 320px;
+
+
+    /* 
+        para limitar el crecimiento
+        una vez que llega a 500px se va a quedar ahi
+        lo mas grande que puede ser
+    */
+    max-width: 500px;
+
+    
+    /* 
+        La altura minima que vas a tener es de 500px pero si tu contenido excede el section crece con tu contenido
+        hasta que tu contenido deja de crecer
+    */
+    min-height: 500px;
+
+
+    /* 
+        de arriba a abajo no le agregues ningun margin
+        pero de izquierda a derecha has que el margin se logre ajustar de forma automatica
+    */
+    margin: 0 auto;
+    background-color: red ;
+}
+
+/* section
+{
     width: 80%;
     min-width: 320px;
     max-width: 500px;
     min-height: 500px;
     margin: 0 auto;
     background-color: red;
-}
+} */
