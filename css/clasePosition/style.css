@@ -55,21 +55,28 @@
 
 }
 
-/* .parent
+
+.parent
 {
+    /* le agregamos un borde de 2 pixeles, negro y de un estilo punteado(dotted) */
     border: 2px black dotted;
+    /* se explicara despues */
     display: inline-block;
 }
 
+/* aqui sabemos que vamos a alterar todos los items que tenga la clase box */
 .box
 {
+    /* en este caso estamos creando cuadritos  */
     display: inline-block;
     background-color: red;
     width: 100px;
     height: 100px;
 }
 
+/* aqui estamos aprovechando la especificidad para poder darle un estilo independiente al item con el id=two */
 #two
 {
     background-color: green;
-} */
+}
+
